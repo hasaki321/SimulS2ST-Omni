@@ -1,0 +1,39 @@
+# Minimal inference dependencies for SimulS2ST-Omni (Python 3.10).
+# Install PyTorch first (see the root README), then:
+#   pip install -r requirements.txt
+#   pip install -e external/SimulEval
+
+accelerate==1.12.0
+einops==0.8.1
+jiwer==3.1.0
+librosa==0.11.0
+numpy==1.26.4
+peft==0.18.1
+qwen-omni-utils==0.0.8
+sacrebleu==2.6.0
+safetensors==0.7.0
+scipy==1.15.3
+sentencepiece==0.2.1
+soundfile==0.13.1
+# transformers with Qwen2.5-Omni support
+transformers==4.52.3
+tqdm>=4.66.0
+# VoiceBox / dual-codec stack
+descript-audiotools==0.7.2
+descript-audio-codec==1.0.0
+easydict==1.13
+einops-exts>=0.0.4
+torchdiffeq>=0.2.5
+matplotlib>=3.8.0
+PyYAML>=6.0
+# SimulEval deps (also installed via editable package)
+textgrid>=1.5
+pydub>=0.25.1
+torchaudio>=2.6.0
+pyworld==0.3.5
+json5>=0.9.0
+setuptools==80.10.2
+ruamel.yaml==0.18.17
+# WebSocket demo
+websockets>=14.0,<16
+pedalboard>=0.9,<1

@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "OmniTalker S2ST Tab Bridge",
+  "version": "0.1.6",
+  "description": "Capture current tab audio, stream to OmniTalker WebSocket, play translated speech + floating captions.",
+  "permissions": [
+    "tabCapture",
+    "offscreen",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "ws://*/*",
+    "wss://*/*",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "OmniTalker S2ST",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["capture-processor.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
