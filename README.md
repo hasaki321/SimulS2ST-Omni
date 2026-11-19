@@ -23,6 +23,7 @@ trajectory supervision.
 
 ## News
 
+- **November 19, 2026** · [Streaming dataset released](https://huggingface.co/datasets/HA-SA-ki/Omnivoice-S2ST-1.4kh)
 - **August 21, 2026:** SimulS2ST-Omni was accepted to the EMNLP 2026 Main Conference.
 
 ## Demo
